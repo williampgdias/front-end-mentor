@@ -7,7 +7,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: hsl(212, 45%, 89%);
-    font-family: "Oufit", sans-serif;
+    font-family: "Outfit", sans-serif;
 }
 
 .card-body {
@@ -38,45 +38,3 @@ p {
 .footer a {
     font-size: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-/* body {
-    font-family: "Outfit", sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    flex-direction: column;
-}
-
-.card-body {
-    padding: 15px;
-    width: 250px;
-    background-color: hsl(0, 0%, 100%);
-    border-radius: 15px;
-}
-
-img {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px;
-}
-
-p {
-    color: lightslategray;
-}
-
-p, h3{
-    text-align: center;
-} */
