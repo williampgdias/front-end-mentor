@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --color-sedan: hsl(31, 77%, 52%);
+    --color-suvs: hsl(184, 100%, 22%);
+    --color-luxury: hsl(179, 100%, 13%);
+
+    --paragraph: hsla(0, 0%, 100%, 0.75);
+    --bg-h-btn: hsl(0, 0%, 95%);
+}
+
+body {
+    background-color: var(--bg-h-btn);
+    font-size: 15px;
+}
+
+
+/******************** CONTAINER ********************/
+
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/******************** CARS-BOX ********************/
+
+
+.cars-box {
+    width: 300px;
+    height: 500px;
+    color: var(--bg-h-btn);
+}
+
+.cars-box:nth-child(1) {
+    background: var(--color-sedan);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.cars-box:nth-child(2) {
+    background: var(--color-suvs);
+}
+
+.cars-box:nth-child(3) {
+    background: var(--color-luxury);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cars-box-info{
+    padding: 50px;
+}
+
+
+/******************** CARS-TEXTS ********************/
+
+.cars-type {
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 1.9rem;
+    padding: 30px 0;
+}
+
+.cars-info {
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.5rem;
+    padding-bottom: 100px;
+}
+
+
+/******************** CARS - BUTTON ********************/
+
+
+.btn1,
+.btn2,
+.btn3 {
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    background-color: var(--bg-h-btn);
+    border: 2px solid var(--bg-h-btn);
+    cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover,
+.btn3:hover {
+    background-color: transparent;
+    color: var(--bg-h-btn);
+    border: 2px solid var(--bg-h-btn);
+    transition: all 500ms ease;
+}
+
+.btn1 {
+    color: var(--color-sedan);
+}
+
+.btn2 {
+    color: var(--color-suvs);
+}
+
+.btn3 {
+    color: var(--color-luxury);
+}
+
+
+/******************** CARD - ATRRIBUTION ********************/
+
+
+.attribution {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+    color: var(--main-heading);
+    font-size: 20px; 
+    text-align: center; 
+}
+
+.attribution a {
+    color: var(--accent);
+    text-decoration: none;
+}
