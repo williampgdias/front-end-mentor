@@ -51,7 +51,7 @@ body {
     border-bottom-right-radius: 10px;
 }
 
-.cars-box-info{
+.cars-box-info {
     padding: 50px;
 }
 
@@ -68,7 +68,7 @@ body {
 .cars-info {
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.5rem;
-    padding-bottom: 100px;
+    margin-bottom: 90px;
 }
 
 
@@ -108,18 +108,188 @@ body {
 }
 
 
-/******************** CARD - ATRRIBUTION ********************/
+/******************** RESPONSIVE ********************/
 
-
-.attribution {
-    font-family: 'Roboto', sans-serif;
-    margin-top: 15px;
-    color: var(--main-heading);
-    font-size: 20px; 
-    text-align: center; 
+@media (min-width: 350px) and (max-width: 409px) {
+    .container {
+        display: block;
+    }
+    .cars-box {
+        margin: 0 auto;
+        width: 350px;
+    }
+    .cars-box-info {
+        padding: 50px;
+    }
+    .cars-type {
+        font-size: 2.5rem;
+    }
+    .cars-info {
+        font-size: 1rem;
+        line-height: 2.1rem;
+        margin-bottom: 20px;
+    }
+    .cars-box:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .cars-box:nth-child(3) {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 60px;
+        height: 40px;
+    }
 }
 
-.attribution a {
-    color: var(--accent);
-    text-decoration: none;
+@media (min-width: 410px) and (max-width: 469px) {
+    .container {
+        display: block;
+    }
+    .cars-box {
+        margin: 0 auto;
+        width: 390px;
+    }
+    .cars-box-info {
+        padding: 60px;
+    }
+    .cars-type {
+        font-size: 3rem;
+    }
+    .cars-info {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+        margin-bottom: 20px;
+    }
+    .cars-box:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .cars-box:nth-child(3) {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 470px) and (max-width: 520px) {
+    .container {
+        display: block;
+    }
+    .cars-box {
+        margin: 0 auto;
+        width: 450px;
+    }
+    .cars-box-info {
+        padding: 60px;
+    }
+    .cars-type {
+        font-size: 3rem;
+    }
+    .cars-info {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+        margin-bottom: 20px;
+    }
+    .cars-box:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .cars-box:nth-child(3) {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 521px) and (max-width: 656px) {
+    .container {
+        display: block;
+    }
+    .cars-box {
+        margin: 0 auto;
+        width: 500px;
+    }
+    .cars-box-info {
+        padding: 60px;
+    }
+    .cars-type {
+        font-size: 3rem;
+    }
+    .cars-info {
+        font-size: 1.2rem;
+        line-height: 2.1rem;
+        margin-bottom: 20px;
+    }
+    .cars-box:nth-child(1) {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    .cars-box:nth-child(3) {
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0px;
+        margin-bottom: 10px;
+    }
+    img {
+        width: 70px;
+        height: 50px;
+    }
+}
+
+@media (min-width: 657px) and (max-width: 687px) {
+    .cars-info {
+        margin-bottom: 50px;
+    }
+    .cars-box-info {
+        padding: 35px;
+    }
+}
+
+@media (min-width: 688px) and (max-width: 749px) {
+    .cars-info {
+        margin-bottom: 50px;
+    }
+    .cars-box-info {
+        padding: 40px;
+    }
+}
+
+@media (min-width: 750px) and (max-width: 805px) {
+    .cars-info {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 806px) and (max-width: 880px) {
+    .cars-box {
+        width: 270px;
+        height: 470px;
+    }
+    .cars-info {
+        margin-bottom: 40px;
+    }
+}
+
+@media (min-width: 881px) and (max-width: 915px) {
+    .cars-info {
+        margin-bottom: 60px;
+    }
 }
