@@ -4,6 +4,10 @@
 
 :root {
     --color-bg: linear-gradient(to bottom, hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    --color-icon: hsl(14, 88%, 65%);
+    --color-text: hsl(238, 29%, 16%);
+    --color-text-p: hsl(237, 12%, 33%);
+    --hr: hsl(240, 5%, 91%);
 }
 
 body {
@@ -11,21 +15,88 @@ body {
     background-image: var(--color-bg);
     font-size: 12px;
     font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* 
-#### Text
+hr {
+    color: var(--hr);
+    width: 350px;
+    margin-left: 10px;
+}
 
-- Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%)
+h1 {
+    padding-left: 15px;
+    color: var(--color-text);
+}
 
-### Neutral
+.container {
+    display: flex;
+    align-items: center;
+    height: 550px;
+    width: 1000px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 20px;
+}
 
-#### Text
+.img-woman .box {
+    position: absolute;
+    bottom: 165px;
+    left: -90px;
+    z-index: 99;
+}
 
-- Very dark grayish blue: hsl(237, 12%, 33%)
-- Dark grayish blue: hsl(240, 6%, 50%)
+.img-woman .woman {
+    position: absolute;
+    top: 90px;
+    left: -80px;
+}
 
-#### Dividers
+.faq-accordion {
+    position: absolute;
+    right: 60px;
+    width: 45%;
+    color: var(--color-text-p);
+}
 
-- Light grayish blue: hsl(240, 5%, 91%) */
+/* Accordion */
+.accordion p {
+    color: var(--color-text);
+}
+.accordion {
+    background: none;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-size: 1rem;
+}
+
+.accordion:after {
+    content: url('./images/icon-arrow-down.svg');
+    float: right;
+    margin-left: 5px;
+}
+
+.active {
+    color: var(--color-text);
+    font-weight: 700;
+}
+
+.accordion:hover {
+    color: hsl(14, 88%, 65%);
+    transition: all 350ms ease;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+    font-size: 0.85rem;
+}
