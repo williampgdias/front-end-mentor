@@ -77,15 +77,19 @@ h1 {
     font-size: 1rem;
 }
 
-.accordion:after {
+.accordion img {
+    margin-left: 55px;
+}
+
+/* .accordion:after {
     content: url('./images/icon-arrow-down.svg');
     float: right;
     margin-left: 5px;
-}
+} */
 
 .active {
     color: var(--color-text);
-    font-weight: 700;
+    font-weight: 500;
 }
 
 .accordion:hover {
