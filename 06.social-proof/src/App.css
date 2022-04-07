@@ -22,6 +22,7 @@
   width: 60vw;
   height: 60vh;
   font-size: 15px;
-  /* background-color: #000; */
+  background-color: hsla(270, 18%, 80%, 0.567);
+  border-radius: 10px;
 }
 
