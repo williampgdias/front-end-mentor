@@ -1,0 +1,65 @@
+:root {
+    --color-bg: hsl(300, 43%, 22%);
+    --color-name: hsl(0, 0%, 100%);
+    --color-pro: hsl(333, 80%, 67%);
+    --color-text: hsl(303, 10%, 53%);
+}
+
+.intro {
+    display: flex;
+}
+
+.info {
+    padding: 45px;
+    width: 50%;
+}
+
+.info h1 {
+    color: var(--color-bg);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+    margin-bottom: 15px;
+}
+
+.info p {
+    color: var(--color-text);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.stars {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-bg);
+    padding-top: 30px;
+}
+
+.stars p {
+    margin-left: 25px;
+}
+
+.stars img {
+    margin: 3px;
+}
+
+.stars1,
+.stars2,
+.stars3 {
+    display: flex;
+    align-items: center;
+    background-color: hsl(300, 24%, 96%);
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 15px;
+}
+
+.stars2 {
+    position: relative;
+    left: 40px;
+}
+
+.stars3 {
+    position: relative;
+    left: 80px;
+}

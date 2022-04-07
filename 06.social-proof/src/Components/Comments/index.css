@@ -1,0 +1,69 @@
+:root {
+    --color-bg: hsl(300, 43%, 22%);
+    --color-name: hsl(0, 0%, 100%);
+    --color-pro: hsl(333, 80%, 67%);
+}
+
+.comment {
+    display: flex;
+    padding: 0 30px;
+}
+
+.comment-c,
+.comment-i,
+.comment-a {
+    background-color: var(--color-bg);
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px;
+    color: var(--color-name);
+    font-size: 0.70rem;
+    width: 375px;
+}
+
+.comment-a p,
+.comment-c p,
+.comment-i p {
+    padding-top: 25px;
+    line-height: 1.2rem;
+}
+
+.comment-i {
+    position: relative;
+    top: 25px;
+}
+
+.comment-a {
+    position: relative;
+    top: 50px;
+}
+
+
+/******************** PERSON ********************/
+
+
+.person-info {
+    display: flex;
+    align-items: center;
+}
+
+.person-info h4 {
+    color: var(--color-name);
+    font-size: 0.70rem;
+}
+
+.person-info h6 {
+    color: var(--color-pro);
+    font-weight: 500;
+    font-size: 0.65rem;
+}
+
+
+/******************** PROFILE ********************/
+
+
+.img-profile {
+    border-radius: 50%;
+    width: 35px;
+    margin-right: 20px;
+}
