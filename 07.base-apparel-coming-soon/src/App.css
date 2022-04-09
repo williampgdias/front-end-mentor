@@ -2,9 +2,14 @@
 
 
 .App {
-  font-family: 'Josefin Sans', sans-serif;
-  font-size: 16px;
-  width: 800px;
-  height: 400px;
-  background-color: red;
+  display: flex;
+  width: 1000px;
+  height: 600px;
+  background-color: #fff;
+}
+
+.content {
+  background-image: url(./bg-pattern-desktop.svg);
+  background-size: cover;
+  padding: 30px 150px 30px 80px;
 }
