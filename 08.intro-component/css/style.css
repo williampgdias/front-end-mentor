@@ -119,23 +119,25 @@ body {
   color: var(--red);
 }
 
-.teste {
-  /* display: flex; */
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+label {
   position: relative;
 }
 
-.teste .error {
-  position: absolute;
-  top: 60px;
-  right: 35px;
-  font-size: 0.65rem;
-  color: red;
-  display: none;
+label .inputError {
+  border: 1px solid red;
 }
 
-.inputError {
-  border: 1px solid red;
+label .error {
+  position: absolute;
+  top: 33px;
+  right: 0;
+  font-size: 0.65rem;
+  color: red;
+}
+
+.iconError {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  visibility: hidden;
 }
