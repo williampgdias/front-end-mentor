@@ -118,3 +118,24 @@ body {
 .form .footer span {
   color: var(--red);
 }
+
+.teste {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.teste .error {
+  position: absolute;
+  top: 60px;
+  right: 35px;
+  font-size: 0.65rem;
+  color: red;
+  display: none;
+}
+
+.inputError {
+  border: 1px solid red;
+}

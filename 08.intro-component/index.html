@@ -25,13 +25,17 @@
 
         <!-- FORM -->
         <div class="form">
-          <form name="loginForm" method="post">
-            <input type="text" name="first-name" placeholder="First Name" /><br />
+          <form id="subscribeForm">
+            <label class="teste">
+              <input type="text" name="first-name" placeholder="First Name" />
+              <span class="error"></span>
+            </label>
+            <br />
             <input type="text" name="last-name" placeholder="Last Name" /><br />
             <input type="email" name="email" placeholder="E-mail Address" /><br />
             <input type="password" name="password" placeholder="Password" /><br />
+            <input type="submit" value="Claim your free trial" class="btn-subscribe"></input>
           </form>
-          <button onclick="validateForm()" class="btn-subscribe">Claim your free trial</button>
           <p class="footer">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
         </div>
       </div>
