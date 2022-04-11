@@ -1,4 +1,5 @@
 let form = document.getElementById('subscribeForm');
+let icon = document.getElementById('.iconError');
 
 form.onsubmit = function (e) {
   e.preventDefault();
@@ -14,14 +15,13 @@ form.onsubmit = function (e) {
     let span = inputName.nextSibling.nextSibling;
     span.innerText = 'First Name cannot be empty';
 
-    let icon = document.querySelector('.iconError');
-    icon.style.visibility = 'visible';
+    icon.style.display = 'block';
   } else {
     inputName.classList.remove('inputError');
     let span = inputName.nextSibling.nextSibling;
     span.innerText = '';
-    let icon = document.querySelector('.iconError');
-    icon.style.visibility = 'hidden';
+
+    icon.style.display = 'none';
   }
 
   let inputLastName = document.forms['subscribeForm']['last-name'];
@@ -33,15 +33,13 @@ form.onsubmit = function (e) {
     let span = inputLastName.nextSibling.nextSibling;
     span.innerText = 'Last Name cannot be empty';
 
-    let icon = document.querySelector('.iconError');
-    icon.style.visibility = 'visible';
+    icon.style.display = 'block';
   } else {
     inputLastName.classList.remove('inputError');
     let span = inputLastName.nextSibling.nextSibling;
     span.innerText = '';
 
-    let icon = document.querySelector('.iconError');
-    icon.style.visibility = 'hidden';
+    icon.style.display = 'none';
   }
 
   let inputEmail = document.forms['subscribeForm']['email'];
@@ -52,11 +50,16 @@ form.onsubmit = function (e) {
 
     let span = inputEmail.nextSibling.nextSibling;
     span.innerText = 'E-mail cannot be empty';
+
+    let icon = document.querySelector('.iconError');
     icon.style.visibility = 'visible';
   } else {
     inputEmail.classList.remove('inputError');
     let span = inputEmail.nextSibling.nextSibling;
     span.innerText = '';
+
+    let icon = document.querySelector('.iconError');
+    icon.style.visibility = 'hidden';
   }
 
   let inputPassword = document.forms['subscribeForm']['password'];
@@ -67,23 +70,15 @@ form.onsubmit = function (e) {
 
     let span = inputPassword.nextSibling.nextSibling;
     span.innerText = 'Password cannot be empty';
+
+    let icon = document.querySelector('.iconError');
     icon.style.visibility = 'visible';
   } else {
     inputPassword.classList.remove('inputError');
     let span = inputPassword.nextSibling.nextSibling;
     span.innerText = '';
+
+    let icon = document.querySelector('.iconError');
+    icon.style.visibility = 'hidden';
   }
 };
-
-// const form = document.getElementById('loginForm');
-
-// form.addEventListener('submit', function (e) {
-//   e.preventDefault();
-
-//   const person = {
-//     name: e.target[0].value,
-//     lastName: e.target[1].value,
-//     email: e.target[2].value,
-//     password: e.target[3].value,
-//   };
-// });
