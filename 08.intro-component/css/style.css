@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --blue: hsl(248, 32%, 49%);
+
+  --dark-blue: hsl(249, 10%, 26%);
+  --Grayish-blue: hsl(246, 25%, 77%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  background-image: url(../images/bg-intro-desktop.png);
+  background-size: cover;
+  background-color: var(--red);
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px 0 130px;
+  color: #fff;
+}
+
+.intro h1 {
+  padding-right: 40px;
+  margin-bottom: 20px;
+  font-size: 2.6rem;
+  line-height: 2.8rem;
+}
+
+.intro p {
+  font-size: 0.8rem;
+}
+
+.container {
+  display: flex;
+  width: 1150px;
+}
+
+.container-form {
+  padding: 70px 100px 70px 50px;
+}
+
+.container-form .trial {
+  text-align: center;
+  background-color: var(--blue);
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 0.75rem;
+  margin-bottom: 15px;
+  color: #fff;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container-form .trial span {
+  font-weight: 700;
+}
+
+.form {
+  width: 450px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  padding: 10px 0;
+  box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form input {
+  font-weight: 600;
+  width: 85%;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid var(--Grayish-blue);
+}
+
+.btn-subscribe {
+  width: 85%;
+  border: none;
+  background-color: var(--green);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px rgba(0, 0, 0, 0.382);
+}
+
+.btn-subscribe:hover {
+  background-color: hsla(154, 59%, 51%, 0.541);
+}
+
+.form .footer {
+  color: var(--Grayish-blue);
+  font-size: 0.55rem;
+  font-weight: 600;
+  padding: 15px 0 25px 0;
+}
+
+.form .footer span {
+  color: var(--red);
+}
