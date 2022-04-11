@@ -1,19 +1,18 @@
-
 .title {
-	text-transform: uppercase;
-	letter-spacing: 0.50rem;
-	font-size: 1.4rem;
-	color: hsl(0, 6%, 24%);
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 1.4rem;
+  color: hsl(0, 6%, 24%);
 }
 
 .title span {
-	color: hsl(0, 36%, 70%);
-	font-weight: 300;
+  color: hsl(0, 36%, 70%);
+  font-weight: 300;
 }
 
 .intro-text {
-	color: hsl(0, 36%, 70%);
-	font-size: 0.75rem;
-	margin: 20px 0;
-	line-height: 1.2rem;
+  color: hsl(0, 36%, 70%);
+  font-size: 0.75rem;
+  margin: 20px 0;
+  line-height: 1.2rem;
 }
