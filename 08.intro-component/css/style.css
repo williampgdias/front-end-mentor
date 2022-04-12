@@ -27,6 +27,11 @@ body {
   background-color: var(--red);
 }
 
+.container {
+  display: flex;
+  width: 1150px;
+}
+
 .intro {
   display: flex;
   flex-direction: column;
@@ -45,11 +50,6 @@ body {
 
 .intro p {
   font-size: 0.8rem;
-}
-
-.container {
-  display: flex;
-  width: 1150px;
 }
 
 .container-form {
@@ -115,8 +115,9 @@ body {
   padding: 15px 0 25px 0;
 }
 
-.form .footer span {
+.form .footer a {
   color: var(--red);
+  text-decoration: none;
 }
 
 label {
@@ -141,4 +142,256 @@ label .error {
   top: 0;
   right: 10px;
   /* visibility: hidden; */
+}
+
+/******************** RESPONSIVE ********************/
+
+@media (min-width: 1056px) and (max-width: 1140px) {
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1046px) and (max-width: 1055px) {
+  .intro {
+    padding-right: 0;
+  }
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2.2rem;
+  }
+  .intro p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 985px) and (max-width: 1045px) {
+  .intro {
+    padding-right: 0;
+  }
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2.3rem;
+  }
+  .intro p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 953px) and (max-width: 984px) {
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2.1rem;
+  }
+  .container-form {
+    padding-left: 20px;
+  }
+  .form {
+    width: 400px;
+  }
+}
+
+@media (min-width: 891px) and (max-width: 952px) {
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2rem;
+  }
+  .container-form {
+    padding-left: 20px;
+  }
+  .form {
+    width: 400px;
+  }
+}
+
+@media (min-width: 861px) and (max-width: 890px) {
+  .intro h1 {
+    padding-right: 0;
+    font-size: 2rem;
+  }
+  .intro p {
+    font-size: 0.75rem;
+  }
+  .container-form {
+    padding-left: 20px;
+  }
+  .form {
+    width: 370px;
+  }
+}
+
+@media (min-width: 725px) and (max-width: 860px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 90px;
+  }
+  .intro h1 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 90px 0 90px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 678px) and (max-width: 724px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 90px;
+  }
+  .intro h1 {
+    font-size: 3.4rem;
+    line-height: 3.6rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 90px 0 90px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 624px) and (max-width: 677px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 50px;
+  }
+  .intro h1 {
+    font-size: 3.2rem;
+    line-height: 3.3rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 50px 0 50px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 584px) and (max-width: 623px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 50px;
+  }
+  .intro h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 50px 0 50px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 583px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 40px;
+  }
+  .intro h1 {
+    font-size: 2.8rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 50px 0 50px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 410px) and (max-width: 499px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 20px;
+  }
+  .intro h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 409px) {
+  .container {
+    display: block;
+  }
+  .intro {
+    padding: 0 20px;
+  }
+  .intro h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+  .intro p {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .container-form {
+    padding: 40px 20px 0 20px;
+    margin: 0 auto;
+  }
+  .form {
+    width: 100%;
+  }
 }

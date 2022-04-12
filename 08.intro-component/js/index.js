@@ -1,10 +1,11 @@
 let form = document.getElementById('subscribeForm');
-let icon = document.querySelector('.iconError');
 
 form.onsubmit = function (e) {
   e.preventDefault();
 
   let hasError = false;
+
+  //////////////////// FIRST-NAME ////////////////////
 
   let inputName = document.forms['subscribeForm']['first-name'];
 
@@ -20,6 +21,8 @@ form.onsubmit = function (e) {
     span.innerText = '';
   }
 
+  //////////////////// LAST-NAME ////////////////////
+
   let inputLastName = document.forms['subscribeForm']['last-name'];
 
   if (!inputLastName.value) {
@@ -34,6 +37,8 @@ form.onsubmit = function (e) {
     span.innerText = '';
   }
 
+  //////////////////// E-MAIL ////////////////////
+
   let inputEmail = document.forms['subscribeForm']['email'];
 
   if (!inputEmail.value) {
@@ -47,6 +52,8 @@ form.onsubmit = function (e) {
     let span = inputEmail.nextSibling.nextSibling;
     span.innerText = '';
   }
+
+  //////////////////// PASSWORD ////////////////////
 
   let inputPassword = document.forms['subscribeForm']['password'];
 
