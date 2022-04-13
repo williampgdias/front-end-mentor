@@ -125,6 +125,12 @@ body {
   flex-wrap: wrap;
 }
 
+/*********************************** CARD-BOX ***********************************/
+
+.card-box {
+  margin-top: -15px;
+}
+
 /*********************************** CARD-BACK ***********************************/
 
 .card-back-work,
@@ -134,12 +140,12 @@ body {
 .card-back-social,
 .card-back-selfcare {
   width: 170px;
-  height: 40px;
+  height: 43px;
   margin: 0 auto;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
-  top: 25px;
+  top: 20px;
   z-index: 9;
 }
 
@@ -173,10 +179,10 @@ body {
 .card-back-exercise img,
 .card-back-social img,
 .card-back-selfcare img {
-  width: 47px;
-  position: relative;
+  width: 50px;
+  position: absolute;
   float: right;
-  bottom: 0;
+  top: 0;
   right: 10px;
 }
 
@@ -186,15 +192,15 @@ body {
   background-color: var(--dark-blue);
   border-radius: 10px;
   width: 170px;
-  height: 140px;
+  height: 130px;
   padding: 20px;
   margin: 10px;
-  position: relative;
   z-index: 99;
   border: none;
   cursor: pointer;
   color: #fff;
   text-align: start;
+  position: relative;
 }
 
 .card-type:hover {
@@ -221,5 +227,4 @@ body {
 .previous-hours {
   color: var(--desaturated-blue);
   font-size: 0.65rem;
-  padding: 10px 0;
 }
