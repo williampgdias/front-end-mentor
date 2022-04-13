@@ -34,6 +34,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -41,7 +42,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Rubik', sans-serif;
   font-size: 18px;
   background-color: var(--very-dark-blue);
   color: #fff;
@@ -54,13 +54,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid red;
 }
 
 /*********************************** INFO-PERSON ***********************************/
 
 .info-person {
   margin-right: 10px;
+  height: 360px;
 }
 
 /*********************************** INFO-PERSON / IMG ***********************************/
@@ -139,7 +139,7 @@ body {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   position: relative;
-  top: 20px;
+  top: 25px;
   z-index: 9;
 }
 
@@ -191,6 +191,14 @@ body {
   margin: 10px;
   position: relative;
   z-index: 99;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: start;
+}
+
+.card-type:hover {
+  background-color: var(--pale-blue);
 }
 
 /*********************************** CARD-TYPE / H3 ***********************************/
