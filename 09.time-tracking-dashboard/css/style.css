@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
+/*********************************** GENERAL STYLE ***********************************/
+
 :root {
   --blue: hsl(246, 80%, 60%);
 
@@ -14,6 +16,18 @@
   --dark-blue: hsl(235, 46%, 20%);
   --desaturated-blue: hsl(235, 45%, 61%);
   --pale-blue: hsl(236, 100%, 87%);
+
+  /* font-weight */
+
+  --fw-3: 300;
+  --fw-4: 400;
+  --fw-7: 700;
+
+  /* font-size */
+
+  --fs-h1: 1.6rem;
+  --fs-h3: 0.85rem;
+  --fs-p: 0.8rem;
 }
 
 * {
@@ -29,4 +43,175 @@ body {
   align-items: center;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
+  background-color: var(--very-dark-blue);
+  color: #fff;
+}
+
+/*********************************** CONTAINER ***********************************/
+
+.container {
+  width: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+/*********************************** INFO-PERSON ***********************************/
+
+.info-person {
+  margin-right: 10px;
+}
+
+/*********************************** INFO-PERSON / IMG ***********************************/
+
+.info-person .person .img-icon {
+  width: 50px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+/************************************ INFO-PERSON / PERSON ***********************************/
+
+.info-person .person {
+  background-color: var(--blue);
+  width: 170px;
+  height: 240px;
+  padding: 20px 40px 50px 20px;
+  border-radius: 10px;
+  z-index: 99;
+  position: relative;
+}
+
+.info-person .person p {
+  color: var(--desaturated-blue);
+  font-size: 0.7rem;
+}
+
+.info-person .person h1 {
+  font-weight: var(--fw-3);
+  font-size: var(--fs-h1);
+}
+
+/*********************************** INFO-PERSON / INFO-DAYS ***********************************/
+
+.info-person .info-days {
+  background-color: var(--dark-blue);
+  font-size: var(--fs-p);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  position: relative;
+  bottom: 12px;
+}
+
+.info-person .info-days a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--desaturated-blue);
+}
+
+.info-person .info-days a:hover {
+  color: #fff;
+}
+
+/*********************************** CARD-CONTAINER ***********************************/
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*********************************** CARD-BACK ***********************************/
+
+.card-back-work,
+.card-back-play,
+.card-back-study,
+.card-back-exercise,
+.card-back-social,
+.card-back-selfcare {
+  width: 170px;
+  height: 40px;
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  position: relative;
+  top: 20px;
+  z-index: 9;
+}
+
+.card-back-work {
+  background-color: var(--work);
+}
+
+.card-back-play {
+  background-color: var(--play);
+}
+
+.card-back-study {
+  background-color: var(--study);
+}
+
+.card-back-exercise {
+  background-color: var(--exercise);
+}
+
+.card-back-social {
+  background-color: var(--social);
+}
+
+.card-back-selfcare {
+  background-color: var(--self-care);
+}
+
+.card-back-work img,
+.card-back-play img,
+.card-back-study img,
+.card-back-exercise img,
+.card-back-social img,
+.card-back-selfcare img {
+  width: 47px;
+  position: relative;
+  float: right;
+  bottom: 0;
+  right: 10px;
+}
+
+/*********************************** CARD-TYPE ***********************************/
+
+.card-type {
+  background-color: var(--dark-blue);
+  border-radius: 10px;
+  width: 170px;
+  height: 140px;
+  padding: 20px;
+  margin: 10px;
+  position: relative;
+  z-index: 99;
+}
+
+/*********************************** CARD-TYPE / H3 ***********************************/
+
+.card-type h3 {
+  font-size: var(--fs-h3);
+  font-weight: var(--fw-4);
+}
+
+/*********************************** CARD-TYPE / HOURS ***********************************/
+
+.hours {
+  font-size: 2.5rem;
+  font-weight: var(--fw-3);
+  margin-top: 20px;
+}
+
+/*********************************** CARD-TYPE / HOURS ***********************************/
+
+.previous-hours {
+  color: var(--desaturated-blue);
+  font-size: 0.65rem;
+  padding: 10px 0;
 }
